@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - action
+
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: To test the GitHub action implementation
+    steps:
+      - name: test case 1
+        id: tc1
+        uses: johnlugton/lgtm-issue-tracker-example@v1
+        with:
+          jira-url: 'https://someserver.somewhere/with/jira/installed'
