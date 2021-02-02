@@ -1,0 +1,11 @@
+name: 'Code Scanning JIRA Sync'
+description: 'Mirror Code Scanning alerts as JIRA tickets'
+inputs:
+  jira-url:
+    description: 'URL of the JIRA instance'
+    required: True
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.jira-url }}
