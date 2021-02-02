@@ -24,5 +24,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.jira-url }} \
-      ${{ inputs.sync-direction }}
+    - ${{ inputs.jira-url }}
+    - ${{ inputs.jira-user }}
+    - ${{ inputs.jira-token }}
+    - ${{ inputs.github-user }}
+    - ${{ inputs.github-token }}
+    - ${{ inputs.sync-direction }}
