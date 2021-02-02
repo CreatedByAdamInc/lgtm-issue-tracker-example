@@ -13,4 +13,4 @@ jobs:
         id: tc1
         uses: johnlugton/lgtm-issue-tracker-example@v1
         with:
-          jira-url: 'https://someserver.somewhere/with/jira/installed'
+          jira-url: 'https://someserver.somewhere/with/jira/installe'
