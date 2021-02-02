@@ -14,4 +14,4 @@ jobs:
         uses: johnlugton/lgtm-issue-tracker-example@v1
         with:
           jira-url: 'https://someserver.somewhere/with/jira/installed'
-          sync-direction: 'anders'
+          sync-direction: 'anders '
