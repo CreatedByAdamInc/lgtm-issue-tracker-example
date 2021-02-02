@@ -4,8 +4,24 @@ inputs:
   jira-url:
     description: 'URL of the JIRA instance'
     required: True
+  jira-user:
+    description: 'JIRA account with the necessary permissions'
+    required: True
+  jira-token:
+    description: 'JIRA password / token'
+    required: True
+  github-user:
+    description: 'GitHub API user'
+    required: True
+  github-token:
+    description: 'GitHub API token with the necessary permissions'
+    required: True
+  sync-direction:
+    description: 'Which direction to synchronize'
+    required: False
+    default: 'both'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.jira-url }}
+    - ${{ inputs.jira-url }} ${{ inputs.sync-direction }}
