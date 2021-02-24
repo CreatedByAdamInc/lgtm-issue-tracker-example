@@ -1,5 +1,7 @@
 #!/bin/sh
 REPOSITORY_NAME="$(echo "$GITHUB_REPOSITORY" | cut -d/ -f 2)"
+echo "DIRECTION:"
+echo $INPUT_SYNC_DIRECTION
 cd / && pipenv run /gh2jira sync \
                             --gh-url "$GITHUB_API_URL" \
                             --gh-token "$INPUT_GITHUB_TOKEN" \
