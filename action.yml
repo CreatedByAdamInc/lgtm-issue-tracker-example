@@ -23,4 +23,5 @@ inputs:
     default: 'both'
 runs:
   using: 'docker'
-  image: 'docker://gh2jira/github-action'
+  #image: 'docker://gh2jira/github-action'
+  image: 'Dockerfile'
