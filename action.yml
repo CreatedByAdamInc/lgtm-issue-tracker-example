@@ -17,6 +17,7 @@ inputs:
   github_token:
     description: 'GitHub API token with the required permissions'
     required: true
+    default: ${{ github.token }}
   sync_direction:
     description: 'Which direction to synchronize in ("gh2jira", "jira2gh" or "both")'
     required: false
